@@ -9,8 +9,8 @@ public class Kerucut extends BangunRuang {
 
     public Kerucut(double jariJari, double tinggi) {
         super("Kerucut");
-        this.alas = new Lingkaran(jariJari); // has-a Lingkaran
-        this.tinggi = new Segitiga(tinggi); // has-a Segitiga (alasnya 0, karena kita hanya butuh tinggi)
+        this.alas = new Lingkaran(jariJari);
+        this.tinggi = new Segitiga(0, tinggi, 0, 0, 0); // has-a Segitiga (alasnya 0, karena kita hanya butuh tinggi)
     }
 
     public double getJariJari() {
