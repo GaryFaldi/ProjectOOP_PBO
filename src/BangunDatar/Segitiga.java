@@ -27,4 +27,7 @@ public class Segitiga extends BangunDatar {
     }
 
     public double getTinggi() { return tinggi; }
+    public double getSisiA() { return sisiA; }
+    public double getSisiB() { return sisiB; }
+    public double getSisiC() { return sisiC; }
 }
