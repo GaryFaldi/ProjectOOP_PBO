@@ -19,4 +19,7 @@ public class PersegiPanjang extends BangunDatar {
     public double hitungKeliling() {
         return 2 * (panjang + lebar);
     }
+
+    public double getPanjang() { return panjang; }
+    public double getLebar() { return lebar; }
 }

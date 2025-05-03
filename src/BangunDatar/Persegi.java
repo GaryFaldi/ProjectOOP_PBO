@@ -17,4 +17,6 @@ public class Persegi extends BangunDatar {
     public double hitungKeliling() {
         return 4 * sisi;
     }
+
+    public double getSisi() { return sisi; }
 }
