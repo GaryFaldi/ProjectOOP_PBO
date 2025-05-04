@@ -21,4 +21,8 @@ public class BelahKetupat extends BangunDatar {
     public double hitungKeliling() {
         return 4 * sisi;
     }
+
+    public double getDiagonal1() { return diagonal1; }
+    public double getDiagonal2() { return diagonal2; }
+    public double getSisi() { return sisi; }
 }

@@ -23,4 +23,9 @@ public class LayangLayang extends BangunDatar {
     public double hitungKeliling() {
         return 2 * (sisiPendek + sisiPanjang);
     }
+
+    public double getDiagonal1() { return diagonal1; }
+    public double getDiagonal2() { return diagonal2; }
+    public double getSisiPendek() { return sisiPendek; }
+    public double getSisiPanjang() { return sisiPanjang; }
 }
