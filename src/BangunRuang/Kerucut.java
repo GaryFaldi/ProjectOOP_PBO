@@ -13,26 +13,20 @@ public class Kerucut extends BangunRuang {
         this.tinggi = new Segitiga(0, tinggi, 0, 0, 0); // has-a Segitiga (alasnya 0, karena kita hanya butuh tinggi)
     }
 
-    public double getJariJari() {
-        return alas.getJariJari();
-    }
-
-    public double getTinggi() {
-        return tinggi.getTinggi();
-    }
-
     @Override
     public double hitungVolume() {
-        double r = getJariJari();
-        double t = getTinggi();
+        double r = alas.getJariJari();
+        double t = tinggi.getTinggi();
         return (1.0 / 3.0) * Math.PI * r * r * t;
     }
 
     @Override
     public double hitungLuasPermukaan() {
-        double r = getJariJari();
-        double t = getTinggi();
+        double r = alas.getJariJari();
+        double t = tinggi.getTinggi();
         double s = Math.sqrt(r * r + t * t); // garis pelukis
         return Math.PI * r * (r + s);
     }
+
+    public double getJariJari() { return alas.getJariJari();}
 }
