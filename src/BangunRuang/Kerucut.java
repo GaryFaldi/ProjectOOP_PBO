@@ -4,7 +4,7 @@ import BangunDatar.Lingkaran;
 import BangunDatar.Segitiga;
 
 public class Kerucut extends BangunRuang {
-    private final Lingkaran alas;
+    protected final Lingkaran alas;
     private final Segitiga tinggi;
 
     public Kerucut(double jariJari, double tinggi) {

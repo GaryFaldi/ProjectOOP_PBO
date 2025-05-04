@@ -12,19 +12,15 @@ public class Tabung extends BangunRuang {
         this.tinggi = tinggi;
     }
 
-    public double getJariJari() {
-        return alas.getJariJari();
-    }
-
     @Override
     public double hitungVolume() {
-        double r = getJariJari();
+        double r = alas.getJariJari();
         return Math.PI * r * r * tinggi;
     }
 
     @Override
     public double hitungLuasPermukaan() {
-        double r = getJariJari();
+        double r = alas.getJariJari();
         return 2 * Math.PI * r * (r + tinggi);
     }
 }

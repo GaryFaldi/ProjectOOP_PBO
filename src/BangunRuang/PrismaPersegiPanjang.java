@@ -12,18 +12,6 @@ public class PrismaPersegiPanjang extends BangunRuang {
         this.tinggiPrisma = tinggiPrisma;
     }
 
-    public double getPanjang() {
-        return alas.getPanjang();
-    }
-
-    public double getLebar() {
-        return alas.getLebar();
-    }
-
-    public double getTinggiPrisma() {
-        return tinggiPrisma;
-    }
-
     @Override
     public double hitungVolume() {
         return alas.hitungLuas() * tinggiPrisma;
@@ -31,9 +19,9 @@ public class PrismaPersegiPanjang extends BangunRuang {
 
     @Override
     public double hitungLuasPermukaan() {
-        double p = getPanjang();
-        double l = getLebar();
-        double t = getTinggiPrisma();
+        double p = alas.getPanjang();
+        double l = alas.getLebar();
+        double t = tinggiPrisma;
         return 2 * (p * l + p * t + l * t);
     }
 }
